@@ -1,0 +1,20 @@
+{
+    "hero":{
+        "title": "Velkommen motherfucker",
+        "text": "Vi klipper kort hår bedre!"
+        },
+    "about": {
+        "title" : "Om Bonde's Klippebutik",
+        "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim elit ac urna commodo, eget lacinia neque finibus. Nam iaculis quam a eros rutrum egestas. Phasellus urna nunc, dapibus sit amet dolor nec, volutpat aliquam metus."
+        },
+    "openingHours" : {
+        "title": "Åbningstider",
+        "monday" : "09.00 - 17.00",
+        "tuesday" : "Lukket",
+        "wednesday" : "09.00 - 17.00",
+        "thursday" : "09.00 - 17.00",
+        "friday" : "09.00 - 17.00",
+        "saturday" : "08.00 - 13.00",
+        "sunday" : "Lukket"
+    }
+}
