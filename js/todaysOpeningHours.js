@@ -7,6 +7,7 @@ function todaysOpeningHours() {
     let time;
     let next = nextOpenday(now);
     let nextOpen = getOpeningHoursForDate(next).split(/ - /)
+    let nextMonth = next.getMonth() +1;
     if (getOpeningHoursForDate(now) == "Lukket") {
         time = "Lukket"
         document.getElementById('toastStatus').innerHTML = "Vi har lukket."
@@ -31,11 +32,11 @@ function todaysOpeningHours() {
             document.getElementById('callAction').innerHTML = "Ring til os når vi åbner på tlf: ";
         } else if (now > endTime && now > startTime) {
             document.getElementById('toastStatus').innerHTML = "Vi har lukket."
-            document.getElementById('openingHours').innerHTML = "Vi åbner igen d. " + next.getDate() + "/" + next.getMonth() + " kl. " + nextOpen[0]+"."; 
+            document.getElementById('openingHours').innerHTML = "Vi åbner igen d. " + next.getDate() + "/" + nextMonth + " kl. " + nextOpen[0]+"."; 
             document.getElementById('callAction').innerHTML = "Ring når vi åbner og bestil tid på tlf: ";
         } else {
             document.getElementById('toastStatus').innerHTML = "Bestil en tid"
-            document.getElementById('openingHours').innerHTML = "Vi åbner igen d. " + next.getDate() + "/" + next.getMonth() + " kl. " + nextOpen[0]+"."; 
+            document.getElementById('openingHours').innerHTML = "Vi åbner igen d. " + next.getDate() + "/" + nextMonth + " kl. " + nextOpen[0]+"."; 
             document.getElementById('callAction').innerHTML = "Ring når vi åbner og bestil tid på tlf: ";
         }
     }
